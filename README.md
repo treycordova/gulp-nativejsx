@@ -1,6 +1,6 @@
 ## gulp-jsxdom [![Build Status](https://travis-ci.org/treycordova/gulp-jsxdom.svg?branch=master)](https://travis-ci.org/treycordova/gulp-jsxdom) [![Version Status](https://img.shields.io/npm/v/gulp-jsxdom.svg)](https://www.npmjs.org/package/gulp-jsxdom)
 #### Gulp plugin for [jsxdom](https://github.com/treycordova/jsxdom).
-Hello, my soda-slurping Gulpers. Here's a gulpjs plugin to help fill your cup.
+Hello, my soda-slurping Gulpers. Here's a Gulp plugin to help fill your cup.
 
 #### Installation
 Install `gulp-jsxdom` by running this command in your project folder:
