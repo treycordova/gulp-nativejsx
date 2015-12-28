@@ -1,0 +1,39 @@
+{
+  "name": "gulp-jsxdom",
+  "version": "0.0.1",
+  "description": "Gulp plugin for jsxdom.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --harmony_destructuring"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treycordova/gulp-jsxdom.git"
+  },
+  "keywords": [
+    "jsx",
+    "dom",
+    "jsxdom",
+    "gulp",
+    "plugin",
+    "transpiler",
+    "transpilation",
+    "react",
+    "vnode"
+  ],
+  "author": "Trey Cordova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treycordova/gulp-jsxdom/issues"
+  },
+  "homepage": "https://github.com/treycordova/gulp-jsxdom#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "jsxdom": "^2.2.1",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
