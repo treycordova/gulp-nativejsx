@@ -1,11 +1,11 @@
-## gulp-jsxdom [![Build Status](https://travis-ci.org/treycordova/gulp-jsxdom.svg?branch=master)](https://travis-ci.org/treycordova/gulp-jsxdom) [![Version Status](https://img.shields.io/npm/v/gulp-jsxdom.svg)](https://www.npmjs.org/package/gulp-jsxdom)
-#### Gulp plugin for [jsxdom](https://github.com/treycordova/jsxdom).
+## gulp-nativejsx [![Build Status](https://travis-ci.org/treycordova/gulp-nativejsx.svg?branch=master)](https://travis-ci.org/treycordova/gulp-nativejsx) [![Version Status](https://img.shields.io/npm/v/gulp-nativejsx.svg)](https://www.npmjs.org/package/gulp-nativejsx)
+#### Gulp plugin for [nativejsx](https://github.com/treycordova/nativejsx).
 Hello, my soda-slurping Gulpers. Here's a Gulp plugin to help fill your cup.
 
 #### Installation
-Install `gulp-jsxdom` by running this command in your project folder:
+Install `gulp-nativejsx` by running this command in your project folder:
 ```shell
-npm install gulp-jsxdom --save-dev
+npm install gulp-nativejsx --save-dev
 ```
 
 #### Configuration
@@ -13,24 +13,24 @@ npm install gulp-jsxdom --save-dev
 'use strict';
 
 var gulp = require('gulp');
-var jsxdom = require('gulp-jsxdom');
+var nativejsx = require('gulp-nativejsx');
 
-gulp.task('jsxdom', function() {
+gulp.task('nativejsx', function() {
   return gulp.src('./templates/**/*.jsx').
-    pipe(jsxdom().on('error', error)).
+    pipe(nativejsx().on('error', error)).
     pipe(gulp.dest('./build/templates'));
 });
 
-gulp.task('jsxdom:watch', function() {
-  gulp.watch('./templates/**/*.jsx', ['jsxdom']);
+gulp.task('nativejsx:watch', function() {
+  gulp.watch('./templates/**/*.jsx', ['nativejsx']);
 });
 ```
 
 ##### Options
 ```js
-gulp.task('jsxdom', function() {
+gulp.task('nativejsx', function() {
   return gulp.src('./templates/**/*.jsx').
-    pipe(jsxdom({variablePrefix: '__', declarationType: 'let'}).on('error', error)).
+    pipe(nativejsx({variablePrefix: '__', declarationType: 'let'}).on('error', error)).
     pipe(gulp.dest('./build/templates'));
 });
 ```

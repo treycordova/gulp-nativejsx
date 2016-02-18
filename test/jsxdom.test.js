@@ -3,11 +3,11 @@
 let path = require('path');
 let assert = require('chai').assert;
 let gutil = require('gulp-util');
-let jsxdom = require('../');
+let nativejsx = require('../');
 
-describe('gulp-jsxdom', function() {
+describe('gulp-nativejsx', function() {
   it('transpiles JSX to native DOM', function(done) {
-    var stream = jsxdom();
+    var stream = nativejsx();
 
     stream.on('data', function(file) {
       assert.match(file.contents.toString(), /var \$\$a = document\.createElement\('div'\);/);

@@ -1,19 +1,19 @@
 {
-  "name": "gulp-jsxdom",
+  "name": "gulp-nativejsx",
   "version": "0.0.1",
-  "description": "Gulp plugin for jsxdom.",
+  "description": "Gulp plugin for nativejsx.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --harmony --harmony_destructuring"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/treycordova/gulp-jsxdom.git"
+    "url": "git+https://github.com/treycordova/gulp-nativejsx.git"
   },
   "keywords": [
     "jsx",
     "dom",
-    "jsxdom",
+    "nativejsx",
     "gulp",
     "plugin",
     "transpiler",
@@ -24,12 +24,12 @@
   "author": "Trey Cordova",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/treycordova/gulp-jsxdom/issues"
+    "url": "https://github.com/treycordova/gulp-nativejsx/issues"
   },
-  "homepage": "https://github.com/treycordova/gulp-jsxdom#readme",
+  "homepage": "https://github.com/treycordova/gulp-nativejsx#readme",
   "dependencies": {
     "gulp-util": "^3.0.7",
-    "jsxdom": "^2.2.1",
+    "nativejsx": "^3.0.0",
     "through": "^2.3.8"
   },
   "devDependencies": {

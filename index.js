@@ -2,7 +2,7 @@
 
 let gutil = require('gulp-util');
 let through = require('through2');
-let jsxdom = require('jsxdom');
+let nativejsx = require('nativejsx');
 
 module.exports = function(options) {
   return through.obj(function(file, encoding, callback) {
@@ -11,18 +11,18 @@ module.exports = function(options) {
     }
 
     if (file.isStream()) {
-      callback(new gutil.PluginError('gulp-jsxdom', 'Streaming not supported.'));
+      callback(new gutil.PluginError('gulp-nativejsx', 'Streaming not supported.'));
     }
 
     try {
-      let transpiled = jsxdom.transpile(file.contents.toString(), options);
+      let transpiled = nativejsx.transpile(file.contents.toString(), options);
 
       file.contents = new Buffer(transpiled);
       file.path = gutil.replaceExtension(file.path, '.js');
 
       callback(null, file);
     } catch (error) {
-      callback(new gutil.PluginError('gulp-jsxdom', error, {
+      callback(new gutil.PluginError('gulp-nativejsx', error, {
         fileName: file.path
       }));
     }
