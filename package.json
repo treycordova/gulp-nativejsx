@@ -1,6 +1,6 @@
 {
   "name": "gulp-nativejsx",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Gulp plugin for nativejsx.",
   "main": "index.js",
   "scripts": {
