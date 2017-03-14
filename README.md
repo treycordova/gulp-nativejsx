@@ -34,6 +34,6 @@ gulp.task('nativejsx', function() {
     pipe(gulp.dest('./build/templates'));
 });
 ```
-- **declarationType**: Either `var` (default) or `let`.
+- **declarationType**: Either `var` (default), `const`, or `let`.
 - **variablePrefix**: Any string (defaults to `$$`) you can conjure up that produces a _valid_ JavaScript variable.
-- **acorn**: All acorn options are available [here](https://github.com/ternjs/acorn#main-parser). Defaults to `{plugins: {jsx: true}}`.
+- **acorn**: All acorn options are available [here](https://github.com/ternjs/acorn#main-parser). Defaults to `{plugins: {jsx: true}, ecmaVersion: 6, sourceType: 'module'}`.
